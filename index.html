@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    background-image: url("img/images1.jpg");
+    color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #dfdfdf;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Money JavaScript</h1>
+  <p>A website created on github.</p>
+</div>
+<!--
+<div class="navbar">
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#">Link</a>
+  <a href="#" class="right">Link</a>
+</div>
+-->
+<div class="row">
+  <div class="side">
+      <h2>About Me</h2>
+      <h5>Photo of me:</h5>
+      <div class="fakeimg" style="height:200px;"><img src="img/images2.jpg" alt="альтернативный текст" width="100%" height="100%"></div>
+      <p>I am a freelance JavaScript developer, I do this because I love it. Main areas: chrome extensions, bots, browser automation.</p>
+      <h3>My groups and channels:</h3>
+      <p>I invite you to visit</p>
+      <div class="fakeimg" style="height:60px;">
+       <img src="img/github_icon.svg" width="30%" height="100%" alt="github"><a href="https://github.com" target="_blank" rel="noreferrer" aria-label="github">github.com</a>
+      </div><br>
+
+      <div class="fakeimg" style="height:60px;">
+        <img src="img/telegram_icon.svg" width="30%" height="100%" alt="telegram">
+        <a href="https://t.me/fancooljoke" target="_blank" rel="noreferrer" aria-label="telegram">telegram</a>
+      </div><br>
+
+      <div class="fakeimg" style="height:60px;">
+        <img src="img/vk_icon.svg" width="30%" height="100%" alt="vk">
+        <a href="https://vk.com/extension_chrome" target="_blank" rel="noreferrer" aria-label="vk">Chrome Extension</a>
+      </div><br>
+
+      <div class="fakeimg" style="height:60px;">
+        <img src="img/youtube_icon.svg" width="30%" height="100%" alt="youtube">
+        <a href="https://www.youtube.com/channel/UCxbvkZpNLpXndTyDxMmk-gA" target="_blank" rel="noreferrer" aria-label="youtube">Money JavaScript</a>
+      </div><br>
+
+      <div class="fakeimg" style="height:60px;">
+        <img src="img/tiktok_icon.svg" width="30%" height="100%" alt="tiktok">
+        <a href="https://www.tiktok.com/@developerjavascript" target="_blank" rel="noreferrer" aria-label="tiktok">DevJS</a>
+      </div><br>
+
+  </div>
+  <div class="main">
+      <h2>Get code from youtube video</h2>
+      <h5>Subscribe, Dec 30, 2022</h5>
+      <div class="fakeimg" style="height:200px;"><img src="img/images3.jpg" alt="альтернативный текст" width="100%" height="100%"></div>
+      <p>To access the repository of the finished code, you just need to subscribe to my YouTube channel !!!</p>
+      <div>
+        <script src="https://apis.google.com/js/platform.js"></script>
+
+        <div class="g-ytsubscribe" data-channelid="UCxbvkZpNLpXndTyDxMmk-gA" data-layout="default" data-count="default"></div>
+      </div>
+      <p>Thanks to the subscription, you will be the first to learn about useful things in JavaScript, and in the GitHub repository you can download the code for free.To subscribe to the channel you need to click on the button with the number of subscribers.Send an Gmail: rrak78350@gmail.com to check who signed up, and in the response you will receive a link to a private repository on GitHub.</p>
+      <br>
+      <h2>Video course "Quick start JavaScript"</h2>
+      <h5>Course, Dec 30, 2022</h5>
+      <div class="fakeimg" style="height:200px;"><img src="img/images4.jpg" alt="альтернативный текст" width="100%" height="100%"></div>
+      <p>About the course</p>
+      <p>Designed for users who own HTML CSS.Basic material for understanding how JavaScript works in the browser,technologies and tools for working with it.For communication: Gmail: rrak78350@gmail.com</p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>JavaScript 2023</h2>
+</div>
+
+</body>
+</html>
